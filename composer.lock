@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "445b2b56036f4fb3c253035674db75e4",
+    "content-hash": "56bcc3e92f29194582660ea9917a65d5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -863,16 +863,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.50.0",
+            "version": "v8.51.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d892dbacbe3859cf9303ccda98ac8d782141d5ae"
+                "reference": "208d9c0043b4c192a9bb9b15782cc4ec37f28bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d892dbacbe3859cf9303ccda98ac8d782141d5ae",
-                "reference": "d892dbacbe3859cf9303ccda98ac8d782141d5ae",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/208d9c0043b4c192a9bb9b15782cc4ec37f28bb0",
+                "reference": "208d9c0043b4c192a9bb9b15782cc4ec37f28bb0",
                 "shasum": ""
             },
             "require": {
@@ -1027,7 +1027,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-07-13T12:41:53+00:00"
+            "time": "2021-07-20T14:38:36+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1096,64 +1096,6 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.6.1"
             },
             "time": "2021-03-02T16:53:12+00:00"
-        },
-        {
-            "name": "laravel/ui",
-            "version": "v3.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/ui.git",
-                "reference": "07d725813350c695c779382cbd6dac0ab8665537"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/07d725813350c695c779382cbd6dac0ab8665537",
-                "reference": "07d725813350c695c779382cbd6dac0ab8665537",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^8.42",
-                "illuminate/filesystem": "^8.42",
-                "illuminate/support": "^8.42",
-                "illuminate/validation": "^8.42",
-                "php": "^7.3|^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Ui\\UiServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Ui\\": "src/",
-                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel UI utilities and presets.",
-            "keywords": [
-                "laravel",
-                "ui"
-            ],
-            "support": {
-                "source": "https://github.com/laravel/ui/tree/v3.3.0"
-            },
-            "time": "2021-05-25T16:45:33+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1597,16 +1539,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.11.0",
+            "version": "v4.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94"
+                "reference": "6608f01670c3cc5079e18c1dab1104e002579143"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fe14cf3672a149364fb66dfe11bf6549af899f94",
-                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6608f01670c3cc5079e18c1dab1104e002579143",
+                "reference": "6608f01670c3cc5079e18c1dab1104e002579143",
                 "shasum": ""
             },
             "require": {
@@ -1647,9 +1589,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.11.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.12.0"
             },
-            "time": "2021-07-03T13:36:55+00:00"
+            "time": "2021-07-21T10:44:31+00:00"
         },
         {
             "name": "opis/closure",
@@ -5084,16 +5026,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.11.0",
+            "version": "2.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "dc6818335f50ccf0b90284784718ea9a82604286"
+                "reference": "7c4e7a7da184cd00c7ce6eacc590200bb9672de7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/dc6818335f50ccf0b90284784718ea9a82604286",
-                "reference": "dc6818335f50ccf0b90284784718ea9a82604286",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/7c4e7a7da184cd00c7ce6eacc590200bb9672de7",
+                "reference": "7c4e7a7da184cd00c7ce6eacc590200bb9672de7",
                 "shasum": ""
             },
             "require": {
@@ -5156,7 +5098,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-07-12T15:55:51+00:00"
+            "time": "2021-07-20T14:01:22+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -5399,6 +5341,53 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "laravel-frontend-presets/tailwindcss",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-frontend-presets/tailwindcss.git",
+                "reference": "4f821e72ff7a46057d815d450ce8f7c64f7abe7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-frontend-presets/tailwindcss/zipball/4f821e72ff7a46057d815d450ce8f7c64f7abe7a",
+                "reference": "4f821e72ff7a46057d815d450ce8f7c64f7abe7a",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.0",
+                "laravel/ui": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFrontendPresets\\TailwindCssPreset\\TailwindCssPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelFrontendPresets\\TailwindCssPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel frontend preset for Tailwind CSS",
+            "keywords": [
+                "laravel",
+                "preset",
+                "tailwindcss"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-frontend-presets/tailwindcss/issues",
+                "source": "https://github.com/laravel-frontend-presets/tailwindcss/tree/4.3.1"
+            },
+            "time": "2020-09-13T00:01:43+00:00"
+        },
+        {
             "name": "laravel/sail",
             "version": "v1.8.6",
             "source": {
@@ -5457,6 +5446,64 @@
                 "source": "https://github.com/laravel/sail"
             },
             "time": "2021-07-15T07:35:41+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/07d725813350c695c779382cbd6dac0ab8665537",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42",
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.3.0"
+            },
+            "time": "2021-05-25T16:45:33+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -5678,16 +5725,16 @@
         },
         {
             "name": "phar-io/manifest",
-            "version": "2.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/manifest.git",
-                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133"
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/manifest/zipball/85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
-                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/97803eca37d319dfa7826cc2437fc020857acb53",
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53",
                 "shasum": ""
             },
             "require": {
@@ -5732,9 +5779,9 @@
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
             "support": {
                 "issues": "https://github.com/phar-io/manifest/issues",
-                "source": "https://github.com/phar-io/manifest/tree/master"
+                "source": "https://github.com/phar-io/manifest/tree/2.0.3"
             },
-            "time": "2020-06-27T14:33:11+00:00"
+            "time": "2021-07-20T11:28:43+00:00"
         },
         {
             "name": "phar-io/version",
@@ -6332,16 +6379,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.6",
+            "version": "9.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb"
+                "reference": "d0dc8b6999c937616df4fb046792004b33fd31c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb",
-                "reference": "fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d0dc8b6999c937616df4fb046792004b33fd31c5",
+                "reference": "d0dc8b6999c937616df4fb046792004b33fd31c5",
                 "shasum": ""
             },
             "require": {
@@ -6419,7 +6466,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.6"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.7"
             },
             "funding": [
                 {
@@ -6431,7 +6478,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-23T05:14:38+00:00"
+            "time": "2021-07-19T06:14:47+00:00"
         },
         {
             "name": "sebastian/cli-parser",

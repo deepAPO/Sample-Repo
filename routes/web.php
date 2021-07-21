@@ -1,9 +1,8 @@
 <?php
 
+use App\Http\Controllers\CarsController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\StudentController;
-use App\Http\Controllers\ValidationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +15,6 @@ use App\Http\Controllers\ValidationController;
 |
 */
 
-Route::get('/', function () {
-    //return view('students/index');
-    return redirect(route('students.index'));
-});
+Route::get('/cars', [CarsController::class,'index']);
 
-Auth::routes();
-
-Route:: resource('students', StudentController::class);
-
-
+Route::resource('/cars', CarsController::class);
