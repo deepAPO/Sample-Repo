@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/cars', [CarsController::class,'index']);
+Route::get('/', function () {
+    return view('index');
+
+});
 
 Route::resource('/cars', CarsController::class);
