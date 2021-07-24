@@ -18,9 +18,23 @@ class CarsController extends Controller
 
         $cars = Car::all();
 
+
+        //Select * From Cars Where name = ' ';
+
+        // $cars = Car::where('name', '=', 'Audi')
+        // ->get();;
+
+        // $cars = Car::where('name', '=', 'Audi')->firstOrFail();;
+
+        // $cars = Car:: chunk(2, function($cars){
+        //     foreach($cars as $car) {
+        //         print_r($car);
+        //     }
+        // });
+
         //dd($cars);
 
-        return view('index',[
+        return view('cars.index',[
             'cars' => $cars
         ]);
     }
@@ -32,7 +46,7 @@ class CarsController extends Controller
      */
     public function create()
     {
-        //
+        return view('cars.create');
     }
 
     /**
@@ -43,7 +57,25 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Method 1
+        // $car = new Car; // Initializing
+
+        // $car->name =$request->input('name');
+        // $car->founded = $request->input('founded');
+        // $car->description = $request->input('description');
+
+        // $car->save();  // Save the Data
+
+        $car= Car::create([
+
+            'name'=> $request->input('name'),
+            'founded'=>$request->input('founded'),
+            'description'=>$request->input('description')
+        ]);
+
+        return redirect('/cars'); // Redirect After Submitting
+
+
     }
 
     /**
@@ -65,7 +97,9 @@ class CarsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $car = Car::find($id)->first();
+
+        return view('cars.edit')->with('car', $car);
     }
 
     /**
@@ -77,7 +111,15 @@ class CarsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $car= Car::where('id', $id)
+            ->update([
+
+                'name'=> $request->input('name'),
+                'founded'=>$request->input('founded'),
+                'description'=>$request->input('description')
+        ]);
+
+        return redirect('/cars');
     }
 
     /**
@@ -86,8 +128,11 @@ class CarsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Car $car)
     {
-        //
+
+        $car->delete();
+
+        return redirect('/cars');
     }
 }
