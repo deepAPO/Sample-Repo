@@ -17,6 +17,9 @@ class CarsController extends Controller
         //Select * FROM Car;
 
         $cars = Car::all();
+        //$cars = json_decode($cars);
+
+
 
 
         //Select * From Cars Where name = ' ';
@@ -33,6 +36,7 @@ class CarsController extends Controller
         // });
 
         //dd($cars);
+
 
         return view('cars.index',[
             'cars' => $cars
@@ -86,7 +90,12 @@ class CarsController extends Controller
      */
     public function show($id)
     {
-        //
+        $car = Car::find($id);
+
+        // dd($car->engines);
+        //var_dump($car->productionDate);
+
+        return view('cars.show')->with('car', $car) ;
     }
 
     /**
@@ -100,6 +109,7 @@ class CarsController extends Controller
         $car = Car::find($id)->first();
 
         return view('cars.edit')->with('car', $car);
+        // return view('cars.edit',compact('cars'));
     }
 
     /**
@@ -118,6 +128,8 @@ class CarsController extends Controller
                 'founded'=>$request->input('founded'),
                 'description'=>$request->input('description')
         ]);
+
+        //$car->update($request->all());
 
         return redirect('/cars');
     }

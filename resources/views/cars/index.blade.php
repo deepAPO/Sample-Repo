@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+{{-- @foreach ( $cars as $car )
+
+{{ $car->name }}
+
+@endforeach --}}
 
 @section('content')
 
@@ -34,7 +39,7 @@
                 Founded: {{ $car->founded }} </span>
 
             <h2 class="text-gray-700 text-5xl">
-                {{ $car->name }}:
+                <a href="/cars/ {{  $car->id }}"> {{ $car->name }}:</a>
             </h2>
 
             <p class="text-lg text-gray-700 py-6">
